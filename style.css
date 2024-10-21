@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    max-width: 1540px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 124px 122px 0px 121px;
+}
+
+header .logo img {
+    max-width: 268px;
+}
+
+header .ps {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header .ps p {
+    margin-left: 20px;
+}
+
+header .ps p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21.09px;
+    color: rgba(115, 115, 115, 1);
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0px 125px 25px 86px;
+    color: #fff;
+    align-items: center;
+}
+.hero .left{
+    text-align: left;
+    width: 40%;
+}
+.hero .right img{
+    max-width: 100%;
+}
+.hero h1 {
+    color: rgba(0, 0, 0, 1);
+    font-size: 3rem;
+    text-align: left;
+}
+
+.hero .btn {
+    color: rgba(255, 255, 255, 1);
+    background-color: #ff4081;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-top: 73px;
+    
+}
+
+.about-eva {
+    text-align: center;
+    height: 686px;
+    margin-top: 250px;
+}
+
+.about-eva h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.cards {
+    display: flex;
+    background-image: url(imgs/cardbg.png);
+    justify-content: center;
+    gap: 61px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 607px;
+    margin-top: 120px;
+}
+
+.card {
+    margin-top: 61px;
+    max-width: 344px;
+    background-color: white;
+    border-radius: 10px;
+    height: 414px;
+}
+.card .down{
+    padding: 20px;
+
+}
+.card img{
+    width: 100%;
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42.19px;
+    color: black;
+    text-align: left;
+}
+
+.card p {
+    font-size: 1rem;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16.41px;
+    text-align: left;
+    color: rgba(118, 118, 118, 1);
+}
+
+.reviews{
+    margin-top: 80px;
+    padding: 98px 0px 72px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(94.31deg, rgba(212, 20, 90, 0.25) 0.96%, rgba(46, 49, 146, 0.25) 104.83%);
+    gap: 40px;
+
+}
+.review {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 536px;
+    text-align: center;
+    max-height: 187px;
+}
+
+.review p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21.09px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.review span {
+    font-weight: bold;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 15.23px;
+    color: rgba(142, 142, 142, 1);
+}
+
+section.contacts {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contacts div {
+    text-align: left;
+}
+
+.contacts p {
+    margin-bottom: 10px;
+}
+.contacts .bold{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.41px;
+    color: black;
+}
+
+.social img {
+    width: 30px;
+    height: 30px;
+}
+/* Media Queries */
+@media (max-width: 1200px) {
+    header .logo{
+        width: 183.36px;
+        gap: 50px;
+    }
+    header div.ps{
+        display: none;
+    }
+    
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        height: 1007px;
+
+    }
+    .about-eva{
+        margin-top: 50px;
+    }
+    .cards .card {
+        max-width: 60%;
+        max-height: 385px;
+    }
+    .card img{
+        max-width: 100%;
+        height: 162px;
+    }
+    .hero h1 {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+    .reviews{
+        margin-top: 725px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .reviews .review{
+        margin-bottom: 60px;
+    }
+    .footer{
+        gap: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    .card{
+        max-width: 264px;
+        max-height: 363px;
+    }
+    .cards{
+        margin-top: 168px;
+    }
+    nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    .reviews .review{
+        max-width: 267px;
+        max-height: 210px;
+        margin-bottom: 60px;
+    }
+    .contacts{
+        gap: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero .left h1 {
+        font-size: 1.5rem;
+    }
+    .hero{
+        justify-content: center;
+    }
+    .hero .left{
+        justify-content: center;
+    }
+    .hero .right{
+        display: none;
+    }
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .hero .btn {
+        padding: 8px 16px;
+    }
+
+    .cards {
+        flex-direction: column;
+        max-height: 600px;
+        margin-top: 400px;
+
+    }
+
+    .card {
+        max-height: 374px;
+    }
+    .reviews{
+        margin-top: 803px;
+    }
+    .contacts{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contacts .about{
+        text-align: center;
+    }
+
+    .form textarea {
+        width: 366px;
+        height: 204px;
+    }
+
+}
